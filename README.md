@@ -18,6 +18,6 @@ Entregáveis:
 
 - > Não é preciso ter domínio próprio e recomendamos o Netlify para hospedagem
 
-## Template do site:
+## Template do site feito no [figma](https://www.figma.com/file/D6G5RAlbITNJ2Xpf5LmIF3/Eletro-GamaAcademy?node-id=0%3A1):
 
 <center><img src="./img/template.png" alt="template" width="400px"></center>
