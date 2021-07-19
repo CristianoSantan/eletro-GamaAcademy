@@ -1,0 +1,36 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Apple iPhone 11",
+            "image": "iphone2.png",
+            "oldPrice": "1.760",
+            "price": 760,
+            "description": "Mobile Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempore magnam minus officiis fugit dolorem dignissimos, libero"
+        },
+        {
+            "id": 2,
+            "title": "Apple iPhone 11",
+            "image": "iphone3.png",
+            "oldPrice": "1.260",
+            "price": 760,
+            "description": "Mobile Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempore magnam minus officiis fugit dolorem dignissimos, libero"
+        },
+        {
+            "id": 3,
+            "title": "Sony headphone",
+            "image": "headphone1.png",
+            "oldPrice": "2.760",
+            "price": 980,
+            "description": "Headphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempore magnam minus officiis fugit dolorem dignissimos, libero"
+        },
+        {
+            "id": 3,
+            "title": "Headphone",
+            "image": "headphone2.png",
+            "oldPrice": "1.920",
+            "price": 960,
+            "description": "Headphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempore magnam minus officiis fugit dolorem dignissimos, libero"
+        }
+    ]
+}

@@ -35,6 +35,7 @@ body {
 /* -------------------------------------  */
 
 .container {
+  padding: 2rem;
   max-width: 992px;
   height: 90vh;
   margin: 0px auto;
@@ -44,6 +45,28 @@ body {
   max-width: 992px;
   height: 90vh;
   margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* ------------------------------------- menu */
+nav {
+  font-size: 3rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fundo-header {
+  position: absolute;
+  z-index: -1;
+  top: 0rem;
+  right: 0rem;
+  width: 100%;
+  height: 42rem;
+  background: var(--color-dark-blue);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 71% 20%, 10% 30%, 0 48%);
 }
 
 h1.logo {
@@ -51,13 +74,22 @@ h1.logo {
 }
 
 .menu {
-  width: 20rem;
+  width: 30rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
+p.ofertas {
+  font-size: 2.5rem;
+}
+
+p.newsletter {
+  font-size: 2.5rem;
+}
+/* ------------------------------------- header promo */
 .promo {
+  padding-bottom: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,6 +113,10 @@ h1.logo {
 }
 
 .desconto {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
   text-align: center;
 }
@@ -93,39 +129,70 @@ h1.logo {
   font-size: 10rem;
   color: var(--color-blue);
 }
+/* ------------------------------------- Ofertas  */
 
-p.ofertas {
-  grid-area: ofertas;
-  font-size: 2.5rem;
-}
-
-p.newsletter {
-  grid-area: newsletter;
-  font-size: 2.5rem;
-}
-
-nav {
-  font-size: 3rem;
-  height: 10rem;
+#cards {
+  padding-top: 8rem;
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  height: 25rem;
+  width: 45rem;
+  padding: 2rem;
+}
+
+.img-card {
+  display: flex;
   align-items: center;
 }
 
-.fundo-header {
-  position: absolute;
-  z-index: -1;
-  top: 0rem;
-  right: 0rem;
-  width: 100%;
-  height: 42rem;
-  background: var(--color-dark-blue);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 71% 20%, 10% 30%, 0 48%);
+.img-card img {
+  height: 21.5rem;
 }
 
+.descricao {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.descricao p:nth-of-type(1) {
+  margin: 0.3rem 0;
+  font-size: 3rem;
+}
+
+.descricao p:nth-of-type(2) {
+  margin: 0.3rem 0;
+  font-size: 1.5rem;
+}
+
+.descricao p:nth-of-type(3) {
+  margin: 0.3rem 0;
+  font-size: 1.5rem;
+}
+
+.descricao span {
+  margin: 0.3rem 0;
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+
+.descricao .btn {
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 3rem;
+}
+/* ------------------------------------- Newsletter */
 .newsletter-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -136,8 +203,12 @@ nav {
 .form-news {
   width: 40%;
   height: 60%;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-news p {
+  padding-bottom: 1rem;
 }
 
 form {
@@ -152,7 +223,7 @@ input {
   height: 3rem;
   margin-bottom: 1rem;
   text-align: center;
-  border-radius: 1.2rem;
+  border: none;
   background: #fff;
   color: #000;
 }
@@ -166,9 +237,15 @@ input {
   background: var(--color-blue);
   color: #fff;
 }
-
+/* ------------------------------------- Footer */
 footer {
   position: relative;
+}
+
+footer p {
+  font-size: 2rem;
+  height: 6rem;
+  text-align: center;
 }
 
 .fundo-footer {
