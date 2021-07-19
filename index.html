@@ -15,23 +15,34 @@
         <nav class="navigation">
           <h1 class="logo">EletroGamaAcademy</h1>
           <div class="menu">
-            <p class="ofertas">Ofertas</p>
-            <p class="newsletter">newsletter</p>
+            <p class="ofertas"><a href="#ofertas-content">Ofertas</a></p>
+            <p class="newsletter">
+              <a href="#newsletter-content">Newsletter</a>
+            </p>
           </div>
         </nav>
-        <p>Black friday</p>
+        <div class="promo">
+          <div class="produto-promo">
+            <img src="./img/desc.png" alt="desconto" class="desc" />
+            <img src="./img/iphone1.png" alt="iphone1" />
+          </div>
+          <div class="desconto">
+            <p>Só nesta sexta feira aproveite! Os melhores preços.</p>
+            <p>Até <span>70 %</span> de DESCONTO</p>
+          </div>
+        </div>
       </section>
-      <section class="container">
-        <p>Ofertas</p>
+      <section id="ofertas-content" class="container ofertas-content">
+        <hr />
       </section>
-      <section class="container newsletter-content">
+      <section id="newsletter-content" class="container newsletter-content">
         <img src="./img/vitrine.jpg" alt="vitrine" />
-        <div class="form">
+        <div class="form-news">
           <p>Receba nossa newsletter, com muitas ofertas!</p>
           <form action="" id="form">
             <input type="text" placeholder="name" id="nome" />
             <input type="text" placeholder="email" id="email" />
-            <input type="submit" value="cadastrar" />
+            <input class="btn" type="submit" value="cadastrar" />
           </form>
         </div>
       </section>

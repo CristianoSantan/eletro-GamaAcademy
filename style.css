@@ -21,6 +21,7 @@
 html {
   width: 100%;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -47,6 +48,50 @@ body {
 
 h1.logo {
   grid-area: logo;
+}
+
+.menu {
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.produto-promo {
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.produto-promo img {
+  width: 30rem;
+}
+
+.produto-promo img.desc {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: 20rem;
+}
+
+.desconto {
+  height: 100%;
+  text-align: center;
+}
+
+.desconto p {
+  font-size: 4rem;
+}
+
+.desconto span {
+  font-size: 10rem;
+  color: var(--color-blue);
 }
 
 p.ofertas {
@@ -88,12 +133,38 @@ nav {
   width: 30rem;
 }
 
+.form-news {
+  width: 40%;
+  height: 60%;
+  font-size: 3.5rem;
+  font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 form {
-  height: 100% !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+input {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-radius: 1.2rem;
+  background: #fff;
+  color: #000;
+}
+
+.btn {
+  background: var(--color-dark-blue);
+  color: #fff;
+}
+
+.btn:hover {
+  background: var(--color-blue);
+  color: #fff;
 }
 
 footer {
