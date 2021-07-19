@@ -4,22 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eletro-Cris | Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>EletroGamaAcademy</title>
   </head>
   <body>
-    <header>
-      <h1>Eletro-Cris</h1>
-    </header>
     <main>
-      <section>
+      <div class="fundo-header"></div>
+      <section class="container-promo">
+        <nav class="navigation">
+          <h1 class="logo">EletroGamaAcademy</h1>
+          <div class="menu">
+            <p class="ofertas">Ofertas</p>
+            <p class="newsletter">newsletter</p>
+          </div>
+        </nav>
         <p>Black friday</p>
       </section>
-      <section>
+      <section class="container">
         <p>Ofertas</p>
+      </section>
+      <section class="container newsletter-content">
+        <img src="./img/vitrine.jpg" alt="vitrine" />
+        <div class="form">
+          <p>Receba nossa newsletter, com muitas ofertas!</p>
+          <form action="" id="form">
+            <input type="text" placeholder="name" id="nome" />
+            <input type="text" placeholder="email" id="email" />
+            <input type="submit" value="cadastrar" />
+          </form>
+        </div>
       </section>
     </main>
     <footer>
       <p>Desenvolvido por Cristiano</p>
+      <div class="fundo-footer"></div>
     </footer>
   </body>
+  <script src="./script.js"></script>
 </html>
