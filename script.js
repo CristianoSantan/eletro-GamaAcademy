@@ -13,7 +13,7 @@ form.addEventListener('submit', (e) => {
 
   localStorage.setItem('lead', convertData);
 
-  let content = document.getElementById('content');
+  let content = document.getElementById('form');
 
   let carregando = `<p>carregando...</p>`;
 
